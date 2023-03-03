@@ -25,7 +25,7 @@ public class Solution {
         }
         return maxGap;
     }
-    public int solution(int[] A) {
+    public int OddOccurrencesInArraysolution(int[] A) {
         // Implement your solution here
         Arrays.sort(A);
         int i;
