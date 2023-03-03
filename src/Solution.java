@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Solution {
     public int gapSolution(int N) {
         int inputNumber = N;
@@ -23,5 +24,14 @@ public class Solution {
             }
         }
         return maxGap;
+    }
+    public int solution(int[] A) {
+        // Implement your solution here
+        Arrays.sort(A);
+        int i;
+        for(i=0; i< A.length-1; i+=2)
+            if(A[i] != A[i+1])
+                break;
+        return A[i];
     }
 }
