@@ -1,4 +1,5 @@
 import java.util.Arrays;
+//solution files
 public class Solution {
     public int gapSolution(int N) {
         int inputNumber = N;
@@ -33,5 +34,14 @@ public class Solution {
             if(A[i] != A[i+1])
                 break;
         return A[i];
+    }
+    public int PermMissingElemsolution(int[] A) {
+        // Implement your solution here
+        Arrays.sort(A);
+        int i;
+        for(i=0; i< A.length;)
+            if(A[i] != ++i)
+                break;
+        return i;
     }
 }
